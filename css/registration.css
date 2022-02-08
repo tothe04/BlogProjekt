@@ -1,0 +1,44 @@
+body{
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    font-family: 'poppins', sans-serif;
+    background: #D3E4CD;
+}
+
+.card{
+    background-color: #f3fcf1;
+    position: center;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 25px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form{
+    padding: 20px;
+    margin: 10px;
+    position: center;
+}
+
+.element{
+    padding: 10px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: #768b76;
+    position: center;
+}
