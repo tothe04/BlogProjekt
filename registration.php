@@ -22,9 +22,9 @@
             <input type="date" name="birthday" id="birthday"><br><br>
 
             <label class="element" for="male">Férfi:</label>
-            <input type="radio" name="gender" id="male"><br><br>
+            <input type="radio" name="gender" id="male" value="male"><br><br>
             <label class="element" for="female">Nő:</label>
-            <input type="radio" name="gender" id="female"><br><br>
+            <input type="radio" name="gender" id="female" value="female"><br><br>
 
             <label class="element" for="mail">Email:</label>
             <input type="email" name="email" id="mail"><br><br>

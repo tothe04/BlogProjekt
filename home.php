@@ -1,3 +1,14 @@
+<?php
+$connect = mysqli_connect("localhost","root","","BlogProjectDB") or die("ERROR: Couldn't connect".mysqli_connect_error());
+
+$stmt = "SELECT * FROM posts;";
+$query = mysqli_query($connect, $stmt);
+
+$query = $connect->prepare($stmt);
+$query->execute();
+$query->bind_result($post_id, $heading, $description, $date, $image_path, $content);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +20,7 @@
 <body>
 
     <div class="header">
-        <h2>Blog Name</h2>
+        <h2>Szösszenetek Evelin életéből</h2>
     </div>
 
     <script id="replaceWithNavBar" src="nav.js"></script>
@@ -17,50 +28,49 @@
 
     <div class="row">
         <div class="leftcolumn">
+            <?php  while($query->fetch()): ?>
             <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Dec 7, 2021</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
+                <h2><?php echo $heading ?></h2>
+                <h5><?php echo "$description, $date"?></h5>
+                <img class="postimage" src="<?php echo $image_path?>">
+                <p><?php echo $content ?></p>
             </div>
-            <div class="card">
-                <h2>TITLE HEADING</h2>
-                <h5>Title description, Sep 2, 2021</h5>
-                <div class="fakeimg" style="height:200px;">Image</div>
-                <p>Some text..</p>
-            </div>
+            <?php endwhile?>
         </div>
         <div class="rightcolumn">
             <div class="card">
-                <h2><a class="link" style="padding: 0;margin: 0"
-                        href="aboutMe.php">
-                    <u>About Me</u>
-                </a></h2>
-                <div class="fakeimg" style="height:100px;">Image</div>
-                <p>Some text about me..</p>
+                <h2>Rólam :)</h2>
+                <img style="height: 200px; object-position: left" src="./gallery/me.jpeg">
+                <img style="height: 200px; object-position: left" src="./gallery/me2.jpg">
+                <p>Egy fiatal lány Vajdaságból, akit érdekel az informatika világa, és akivel mindig történik valami.
+                    <a class="link" style="padding: 0;margin: 0" href="aboutMe.php">
+                        <u>Katt továbbiakért :)</u>
+                    </a>
+                </p>
             </div>
             <div class="card">
-                <h3>Popular Post</h3>
+                <h3>Felkapottak</h3>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div><br>
                 <div class="fakeimg">Image</div>
             </div>
             <div class="card">
-                <h3>Follow Me</h3>
+                <h3>Kövess be</h3>
                 <p>Some text..</p>
             </div>
             <div class="card">
-                <h3><a
+                <h3>Szeretnéd felvenni velem a kapcsolatot?</h3>
+                <p><a
                         class="link" style="padding: 0; margin: 0"
                         href="contact.php">
-                    <u>Contact Me</u>
-                </a></h3>
+                    <u>Itt megteheted</u>
+                </a></p>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <h3>Say hi to me on these social networks:</h3><br>
+        <h3>Keress meg ezeken a platformokon:</h3><br>
         <ul class="social">
             <li style="list-style: none"><a class="css-is-deranged" href="https://github.com/tothe04">GitHub</a></li>
             <li style="list-style: none"><a class="css-is-deranged" href="https://www.instagram.com/evelintoth01/">Instagram</a></li>

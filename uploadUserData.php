@@ -26,6 +26,11 @@ if(isset($_GET['username'])){
 }
 if(isset($_GET['password'])){
     $password = mysqli_real_escape_string($connect, $_GET['password']);
+//    $pepper = getConfigVariable("pepper");
+//    //$pwd = $_POST['password'];
+//    $pwd_peppered = hash_hmac($password, $pwd, $pepper);
+//    $pwd_hashed = password_hash($pwd_peppered, PASSWORD_ARGON2ID);
+
 }
 
 $sql = "INSERT INTO users (name, birthday, gender, email, username, password) VALUES ('$name','$birthday', '$gender', '$email','$username', '$password')";

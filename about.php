@@ -16,7 +16,7 @@
         <section class="introduction-section">
         <h2><a
                         class="link" style="padding: 0; margin: 0"
-                        href="aboutMe.php.php">
+                        href="aboutMe.php">
                     <u>Bemutatkozás</u>
                 </a></h2>
             <p>Tóth Evelin vagyok. </p>

@@ -40,3 +40,23 @@
 
 </body>
 </html>
+
+<?php
+if(isset($_POST)){
+    session_start();
+//    $pepper = getConfigVariable("pepper");
+    $userName = $_POST['username'];
+    $pwd = $_POST['password'];
+//    $pwd_peppered = hash_hmac("sha256", $pwd, $pepper);
+//    $pwd_hashed = get_pwd_from_db($userName);
+//    if (password_verify($pwd_peppered, $pwd_hashed)) {
+//        echo "Password matches.";
+//    }
+//    else {
+//        echo "Password incorrect.";
+//    }
+
+    $stmt = "SELECT * FROM users WHERE username= $userName AND password=$pwd";
+    $query = mysqli_query($stmt);
+}
+?>
