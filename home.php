@@ -14,18 +14,6 @@
 
     <script id="replaceWithNavBar" src="nav.js"></script>
 
-<!--    <nav class="navbar">-->
-<!--        <div class="logoPos">-->
-<!--            <img style="height: 60px; width: auto" src="img/logoS.png" class="logo" alt="">-->
-<!--        </div>-->
-<!--        <ul class="links-container">-->
-<!--            <li class="link-item"><a href="home.php" class="link">Főoldal</a></li>-->
-<!--            <li class="link-item"><a href="about.html" class="link">A blogról</a></li>-->
-<!--            <li class="link-item"><a href="aboutMe.html" class="link">Rólam</a></li>-->
-<!--            <li class="link-item"><a href="login.html" style="background: #768b76" class="link">Bejelentkezés</a></li>-->
-<!--        </ul>-->
-<!--    </nav>-->
-
 
     <div class="row">
         <div class="leftcolumn">

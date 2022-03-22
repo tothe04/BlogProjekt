@@ -8,7 +8,7 @@
 .introduction-section,
 .location-section,
 .questions-section {
-    max-width: 38em;
+    /*max-width: 38em;*/
     margin-left: 0;
     margin-right: auto;
     margin-top: 2em;

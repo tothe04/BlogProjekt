@@ -1,34 +1,4 @@
 
-<!--//$connect = mysql_connect("localhost","root","") or die ("Couldn't connect!");-->
-<!--//mysql_select_db("BlogProjectDB") or die ("Couldn't find db");-->
-
-<?php
-
-//$link = mysqli_connect('localhost', '	LAPTOP-7SJGUJ93$', '');
-//if (!$link) {
-//    die('Could not connect: ' . mysqli_error());
-//}
-//echo 'Connected successfully';
-//mysqli_close($link);
-
-//$connect = mysqli_connect("localhost","root","") or die ("Couldn't connect!");
-//mysqli_select_db("BlogProjectDB") or die ("Couldn't find db");
-
-//$servername = "localhost";
-//$username = "LAPTOP-7SJGUJ93$";
-//$password = "";
-//
-//// Create connection
-//$conn = new mysqli($servername, $username, $password);
-//
-//// Check connection
-//if ($conn->connect_error) {
-//    die("Connection failed: " . $conn->connect_error);
-//}
-//echo "Connected successfully";
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,18 +14,6 @@
     </div>
 
     <script id="replaceWithNavBar" src="nav.js"></script>
-
-<!--    <nav class="navbar">-->
-<!--        <div class="logoPos">-->
-<!--            <img style="height: 60px; width: auto" src="img/logoS.png" class="logo" alt="">-->
-<!--        </div>-->
-<!--        <ul class="links-container">-->
-<!--            <li class="link-item"><a href="home.php" class="link">Főoldal</a></li>-->
-<!--            <li class="link-item"><a href="about.html" class="link">A blogról</a></li>-->
-<!--            <li class="link-item"><a href="aboutMe.html" class="link">Rólam</a></li>-->
-<!--            <li class="link-item"><a href="login.html" style="background: #768b76" class="link">Bejelentkezés</a></li>-->
-<!--        </ul>-->
-<!--    </nav>-->
 
 
     <div class="row">

@@ -1,44 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu-HU">
 <head>
     <meta charset="UTF-8">
     <title>Blog : Registration</title>
 
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/registration.css">
+
 </head>
 <body>
 <script id="replaceWithNavBar" src="nav.js"></script>
     <br><br>
 
     <div class="card">
-        <h2>Registration</h2>
-        <form class="form" style="text-align: left">
-            <label class="element" for="name">Nev: </label>
+        <h2>Regisztráció</h2>
+        <form action="uploadUserData.php" class="form" style="text-align: left" method="get">
+            <label class="element" for="name">Név: </label>
             <input type="text" name="name" id="name"><br><br>
 
-            <label class="element" for="birthday">Szul datum:</label>
+            <label class="element" for="birthday">Születési dátum:</label>
             <input type="date" name="birthday" id="birthday"><br><br>
 
-            <label class="element" for="male">Ferfi:</label>
+            <label class="element" for="male">Férfi:</label>
             <input type="radio" name="gender" id="male"><br><br>
-            <label class="element" for="female">No:</label>
+            <label class="element" for="female">Nő:</label>
             <input type="radio" name="gender" id="female"><br><br>
-
-            <label class="element" for="phone">Telefonszam:</label>
-            <input type="tel" name="phone" id="phone"><br><br>
 
             <label class="element" for="mail">Email:</label>
             <input type="email" name="email" id="mail"><br><br>
 
-            <label class="element" for="user">Felhasznalonev: </label>
+            <label class="element" for="user">Felhasználónév: </label>
             <input type="text" name="username" id="user"><br><br>
 
-            <label class="element" for="pwd">Jelszo</label>
+            <label class="element" for="pwd">Jelszó</label>
             <input type="password" name="password" id="pwd"><br><br>
 
-            <input class="button" type="submit" value="send">
-            <input class="button" type="reset" value="reset">
+            <input class="button" type="submit" value="küldés">
+            <input class="button" type="reset" value="törlés">
         </form>
     </div>
 
